@@ -1,0 +1,14 @@
+name = "herokustart"
+type = "javascript"
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+compatibility_date = "2022-03-24"
+kv_namespaces = [
+  { binding = "MykvDB", id = "56d9df8166ce4f229a51e87b74c01a58", preview_id = "56d9df8166ce4f229a51e87b74c01a58" }
+]
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
